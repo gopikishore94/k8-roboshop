@@ -31,7 +31,7 @@ spec:
       containers:
       - name: web
         imagePullPolicy: Always
-        image: 338121/web:v1
+        image: 338121/web:v2
         volumeMounts:
         - name: nginx-config
           mountPath: /etc/nginx/nginx.conf
