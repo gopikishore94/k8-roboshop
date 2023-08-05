@@ -24,4 +24,4 @@ spec:
       containers:
       - name: mongodb
         imagePullPolicy: Always
-        image: techworldwithsiva/mongodb:k8
+        image: 338121/mongodb:v1
