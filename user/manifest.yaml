@@ -23,4 +23,5 @@ spec:
     spec:
       containers:
       - name: user
+        imagePullPolicy: Always
         image: 338121/user:v1
