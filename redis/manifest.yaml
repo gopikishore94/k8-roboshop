@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: roboshop
+  labels:
+    app: redis
+    tier: DB
+    project: roboshop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis
+      tier: DB
+      project: roboshop
+  template:
+    metadata:
+      labels:
+        app: redis
+        tier: DB
+        project: roboshop
+    spec:
+      containers:
+      - name: redis
+        image: redis
